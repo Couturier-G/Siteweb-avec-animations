@@ -1,4 +1,9 @@
 # Siteweb-avec-animations
-Siteweb avec animations CSS et SASS  
+Siteweb avec animations CSS et SASS 
+
+Technologies : 
+* HTML
+* CSS
+* SASS
   
 Installations : Dans le dossier "Siteweb avec animations" lancez le fichier index.html avec un navigateur web et naviguez entre les différentes pages.
