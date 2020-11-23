@@ -1,0 +1,265 @@
+/*UNDERLINE PAGE1*/
+/*UNDERLINE PAGE2*/
+/*COULEURS SITE*/
+/*HEADER ET FOOTER COMMUN*/
+/*PAGE ACCUEIL*/
+/*PAGE MENUS*/
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0; }
+
+.site-header {
+  position: relative;
+  background-color: #579C87;
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  height: 150px;
+  display: flex;
+  width: 100%; }
+
+#title {
+  margin: auto; }
+
+.site-footer {
+  background-color: #579C87;
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+.footers {
+  margin: auto; }
+
+#legal {
+  padding-left: 20px; }
+  #legal:hover {
+    animation: wiggle 0.5s 2 ease; }
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
+#contact {
+  padding-right: 20px;
+  text-align: right; }
+  #contact:hover {
+    animation: wiggle 0.5s 2 ease; }
+@keyframes wiggle {
+  0% {
+    transform: translate(0px); }
+  10%, 30% {
+    transform: translate(-6px); }
+  20% {
+    transform: translate(-12px); }
+  50% {
+    transform: translate(0px); }
+  60%, 80% {
+    transform: translate(6px); }
+  70% {
+    transform: translate(12px); }
+  100% {
+    transform: translate(0px); } }
+a:link {
+  color: #FDCB46;
+  text-decoration: none; }
+
+main {
+  margin: auto; }
+
+#title {
+  color: #FDCB46; }
+
+nav {
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 25px; }
+
+.grid-item {
+  min-width: 300px;
+  height: 400px;
+  box-shadow: 0 0 1em grey;
+  margin: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  .grid-item #item1 {
+    height: 100%;
+    background-color: #FCDFDB;
+    transition: transform 1s, opacity 1s; }
+    .grid-item #item1:hover {
+      transform: scale(1.5);
+      opacity: 0.75;
+      transition: all 1s; }
+    .grid-item #item1 #icon-1 {
+      margin-top: 35%;
+      height: 55px;
+      width: 55px;
+      margin-bottom: 5px; }
+    .grid-item #item1 #name1 {
+      margin-top: 0px;
+      font-family: "Devonshire";
+      font-size: 2em;
+      color: #3D1319; }
+    .grid-item #item1 #menu1 {
+      font-family: "Sriracha";
+      font-size: 2em;
+      color: #3D1319;
+      margin-top: 0;
+      margin-bottom: 40%; }
+  .grid-item #item2 {
+    height: 100%;
+    background-color: #FFF5FE;
+    transition: transform 1s, opacity 1s; }
+    .grid-item #item2:hover {
+      transform: scale(1.5);
+      opacity: 0.75;
+      transition: all 1s; }
+    .grid-item #item2 #name2 {
+      margin-top: 45%;
+      font-family: "Lobster";
+      font-size: 1.5em;
+      background: linear-gradient(to right, #C77412, #8F5AFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .grid-item #item2 #menu2 {
+      font-family: "Playfair Display";
+      font-size: 2em;
+      color: #C77412;
+      margin-top: 10%;
+      font-weight: bold; }
+  .grid-item #item3 {
+    height: 100%;
+    background-color: #F9F9F9;
+    transition: transform 1s, opacity 1s; }
+    .grid-item #item3:hover {
+      transform: scale(1.5);
+      opacity: 0.75;
+      transition: all 1s; }
+    .grid-item #item3 #name3 {
+      margin-top: 45%;
+      font-family: "Dancing Script";
+      font-size: 1.8em;
+      background: linear-gradient(to right, #0228DD, #ACDBFD);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .grid-item #item3 #menu3 {
+      font-family: "Caveat";
+      font-size: 2.5em;
+      color: #0887FB;
+      margin-top: 10%; }
+  .grid-item #item4 {
+    height: 100%;
+    background-color: #FFFFFF;
+    transition: transform 1s, opacity 1s; }
+    .grid-item #item4:hover {
+      transform: scale(1.5);
+      opacity: 0.75;
+      transition: all 1s; }
+    .grid-item #item4 #name4 {
+      margin-top: 45%;
+      font-family: "Kaushan Script";
+      font-size: 1.8em;
+      background: linear-gradient(to right, #3D923A, #BEFF7F);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .grid-item #item4 #menu4 {
+      font-family: "Caveat";
+      font-size: 2.5em;
+      color: #72BF56;
+      margin-top: 10%; }
+
+.name {
+  margin: auto; }
+
+.menu {
+  margin: auto; }
+
+#infuture {
+  border-radius: 10px;
+  background-color: #579C87;
+  color: #FDCB46;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  font-size: 1.2em;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+  opacity: 0.8; }
+  #infuture > #circles #circle-1 {
+    animation: shortly 3s infinite ease-in; }
+  #infuture > #circles #circle-2 {
+    animation: shortly 3s infinite 0.8s ease-in; }
+  #infuture > #circles #circle-3 {
+    animation: shortly 3s infinite 1.8s ease-in; }
+@keyframes shortly {
+  5% {
+    opacity: 0.5;
+    background-color: #FDCB46; }
+  16% {
+    background-color: #FDCB46;
+    opacity: 0.85; }
+  33% {
+    opacity: 0.5;
+    background-color: #FDCB46; }
+  100% {
+    opacity: 0.25;
+    background-color: #FDCB46; } }
+  #infuture #soon {
+    margin: auto; }
+  #infuture #circles {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 20%; }
+    #infuture #circles .circle {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%; }
+
+#legal {
+  text-decoration: none;
+  color: #FDCB46; }
+
+#legal-main {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat"; }
+
+@media all and (min-width: 1225px) {
+  nav {
+    display: grid;
+    grid-template-columns: auto auto; }
+
+  .grid-item {
+    width: 400px;
+    height: 500px; }
+
+  #name1 {
+    margin-top: 15px; }
+
+  #infuture {
+    width: 50%; } }
+
+/*# sourceMappingURL=style.css.map */

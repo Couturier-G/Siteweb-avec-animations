@@ -1,0 +1,126 @@
+@import "_animations.scss";
+@import "_mediaqueries.scss";
+/*COULEURS SITE*/
+@mixin colors
+{
+    background-color: #579C87;
+    color: #FDCB46;
+    font-family: 'Montserrat', sans-serif ;
+}
+/*HEADER ET FOOTER COMMUN*/
+@mixin headerfooter
+{      
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }                                     
+    .site-header
+     {
+        position: relative;
+        @include colors;
+        font-size: 3em;
+        font-weight: bold;
+        height: 150px;
+        display: flex;
+        width: 100%;
+    }
+    #title
+    {
+        margin: auto;
+    }
+    .site-footer
+    {
+        @include colors;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5em;
+        height: 75px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .footers
+    {
+        margin: auto;   
+    }
+    #legal
+    {
+        padding-left: 20px;
+        @include shake;
+    }
+    #contact
+    {
+        padding-right: 20px;
+        text-align: right; 
+        @include shake;  
+    }
+    a:link
+    {
+        color: #FDCB46;
+        text-decoration: none;
+    }
+}
+/*PAGE ACCUEIL*/
+@mixin itemproperties($background-color)
+{
+    height: 100%;
+    background-color: $background-color;
+    transition: transform 1s, opacity 1s;
+}
+@mixin name($margin-top,$font-family,$font-size,)
+{
+    margin-top:$margin-top;
+    font-family:$font-family;
+    font-size:$font-size;
+}
+@mixin menu($font-family,$font-size,$color,$margin-top)
+{
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+    margin-top: $margin-top;
+}
+/*PAGE MENUS*/
+@mixin sections($color,$background-color,$font-family)
+{
+    background-color:$background-color;
+    color: $color;
+    font-family: $font-family;
+    text-align: center;
+    font-size: 1.7em;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 100px;
+}
+@mixin center{
+    margin:auto;
+    width:30%;
+    height: 40px;
+}
+@mixin menuproperties($font-family,$font-size)
+{
+    font-family: $font-family;
+    font-size: $font-size;
+    margin:35px;
+    margin-bottom: 50px;
+}
+@mixin lineargradient2
+{
+    background: linear-gradient(to right,#C77412,#8F5AFF );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin lineargradient3
+{
+    background: linear-gradient(to right,#0228DD,#ACDBFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin lineargradient4
+{
+    background: linear-gradient(to right,#3D923A,#BEFF7F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

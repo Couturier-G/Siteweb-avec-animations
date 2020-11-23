@@ -1,0 +1,65 @@
+@mixin mediaqueries
+{
+    @media all and (min-width: 1225px)                  /*media queries*/
+    {
+        nav
+        {
+            display:grid;
+            grid-template-columns: auto auto;
+        }
+        .grid-item
+        {
+            width:400px;
+            height: 500px;
+        }
+        #name1
+        {
+            margin-top: 15px;
+        }
+        #infuture
+        {
+            width: 50%;
+        }
+
+    }
+}
+
+@mixin mediapage1
+{
+    @media all and (max-width: 905px)
+    {
+        .header-article
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .feature1
+        {
+            display: none;
+        }
+        .feature2
+        {
+            display: none;
+        }
+        .line2
+        {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        #name-menu1::before
+        {
+            display: none;
+        }
+        #name-menu1
+        {
+            padding-top: 40px;
+        }
+    }
+    @media all and (min-width: 1533px)
+    {
+        main
+        {
+            width: 50%;
+        }
+    }
+}
